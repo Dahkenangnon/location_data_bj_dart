@@ -1,5 +1,7 @@
 import '../utils/utils.dart';
 
+/// Raw list of districts in Benin
+///
 List<dynamic> districtsRaw = [
   {"code": "10e", "name": "10EME ARRONDISSEMENT", "town_code": "cot"},
   {"code": "11e", "name": "11EME ARRONDISSEMENT", "town_code": "cot"},

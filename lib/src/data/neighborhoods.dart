@@ -1,5 +1,7 @@
 import '../utils/utils.dart';
 
+/// Raw list of neighborhoods in Benin
+///
 List<dynamic> neighborhoodsRaw = [
   {"code": "aba", "name": "ABADAGO", "district_code": "mas"},
   {"code": "abl", "name": "ABALLA", "district_code": "dou"},

@@ -1,3 +1,6 @@
+/// Department data model
+///
+///
 class Department implements LocationEntity {
   @override
   final String name;
@@ -14,6 +17,8 @@ class Department implements LocationEntity {
   }
 }
 
+/// Town data model
+///
 class Town implements LocationEntity {
   @override
   final String name;
@@ -32,6 +37,8 @@ class Town implements LocationEntity {
   }
 }
 
+/// District data model
+///
 class District implements LocationEntity {
   @override
   final String name;
@@ -50,6 +57,8 @@ class District implements LocationEntity {
   }
 }
 
+/// Neighborhood data model
+///
 class Neighborhood implements LocationEntity {
   @override
   final String name;
@@ -69,6 +78,8 @@ class Neighborhood implements LocationEntity {
   }
 }
 
+/// Abstract class for all location entities
+///
 abstract class LocationEntity {
   String get name;
   String get code;

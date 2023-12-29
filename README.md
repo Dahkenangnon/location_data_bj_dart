@@ -1,7 +1,7 @@
 # BJ Location Data
 Benin Republic location data for web and mobile apps
 
-For javacript version, please visit [location_data_bj](https://www.npmjs.com/package/location_data_bj) npm package
+For javascript version, please visit [location_data_bj](https://www.npmjs.com/package/location_data_bj) npm package
 
 For raw data version, please visit [bj_location_data_raw](https://github.com/Dahkenangnon/bj_location_data_raw) repository
 
@@ -20,8 +20,10 @@ For raw data version, please visit [bj_location_data_raw](https://github.com/Dah
 > The `code` used in the dataset is an auto generated code. Please refer to the [bj_location_data_raw](https://github.com/Dahkenangnon/bj_location_data_raw) repository for more information.
 ------------------------
 
-Note: This package is pure dart package. It can be used in 
-in all platforms supported by dart.
+Note: 
+- This package is pure dart package. It can be used in all platforms supported by dart.
+
+- For flutter users, note that we don't provide any widget for now. **`Feel free to contribute`**.
 
 ## Installation
 In the dependencies: section of your pubspec.yaml, add the following line:
@@ -217,7 +219,7 @@ class Neighborhood implements LocationEntity {
 ```
 
 ## Disclaimer
-Please note that the dataset used is not official. It is based on the work done by the [Junior Gantin](https://github.com/nioperas06) at [this repos](https://github.com/nioperas06/bj-decoupage-territorial).
+Please note that the dataset used is not official. It is based on the work done by [Junior Gantin](https://github.com/nioperas06) at [this repo](https://github.com/nioperas06/bj-decoupage-territorial).
 
 
 ## License

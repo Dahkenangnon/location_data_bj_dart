@@ -1,5 +1,7 @@
 import '../utils/utils.dart';
 
+/// Raw list of towns in Benin
+///
 List<dynamic> townsRaw = [
   {"code": "abo", "name": "ABOMEY", "department_code": "zou"},
   {"code": "abm", "name": "ABOMEY-CALAVI", "department_code": "atl"},

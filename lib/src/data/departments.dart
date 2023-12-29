@@ -1,6 +1,7 @@
-
 import '../utils/utils.dart';
 
+/// Raw list of departments in Benin
+///
 List<dynamic> departmentsRaw = [
   {"code": "ali", "name": "ALIBORI"},
   {"code": "ata", "name": "ATACORA"},

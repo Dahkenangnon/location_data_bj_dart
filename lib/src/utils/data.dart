@@ -5,8 +5,34 @@ import '../data/towns.dart';
 import '../data/districts.dart';
 import '../data/neighborhoods.dart';
 
-
+/// [LocationData] allow you to get data about Benin's locations.
+///
+/// Warning: For flutter users, this package don't provide any widget.
+///
+/// You can get data about departments, towns, districts and neighborhoods.
+///
+/// Note: All methods that return a list of locations have a parameter `sortBy` that can be `asc` or `desc`.
+///
+/// Example:
+/// ```dart
+/// // Get all departments in ascending order
+/// List<Department> departments = LocationData.departmentList();
+///
+/// // Get all departments in descending order
+/// List<Department> departments = LocationData.departmentList(sortBy: 'desc');
+///
+/// // Get all towns in ascending order
+/// List<Town> towns = LocationData.townsList();
+///
+/// // Get all towns in descending order
+/// List<Town> towns = LocationData.townsList(sortBy: 'desc');
+///
+///```
+///
+///
 class LocationData {
+  /// Get all departments in ascending or descending order.
+  ///
   static List<Department> departmentList({String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
       return departments;
@@ -15,6 +41,8 @@ class LocationData {
     }
   }
 
+  /// Get all towns in ascending or descending order.
+  ///
   static List<Town> townsList({String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
       return towns;
@@ -23,6 +51,8 @@ class LocationData {
     }
   }
 
+  /// Get all districts in ascending or descending order.
+  ///
   static List<District> districtList({String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
       return districts;
@@ -31,6 +61,8 @@ class LocationData {
     }
   }
 
+  /// Get all neighborhoods in ascending or descending order.
+  ///
   static List<Neighborhood> neighborhoodList({String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
       return neighborhoods;
@@ -39,28 +71,38 @@ class LocationData {
     }
   }
 
+  /// Get a department by its code.
+  ///
   static Department? department(String code) {
     return departments.firstWhere(
       (element) => element.code == code,
     );
   }
 
+  /// Get a town by its code.
+  ///
   static Town? town(String code) {
     return towns.firstWhere((element) => element.code == code);
   }
 
+  /// Get a district by its code.
+  ///
   static District? district(String code) {
     return districts.firstWhere(
       (element) => element.code == code,
     );
   }
 
+  /// Get a neighborhood by its code.
+  ///
   static Neighborhood? neighborhood(String code) {
     return neighborhoods.firstWhere(
       (element) => element.code == code,
     );
   }
 
+  /// Get a department by its name.
+  ///
   static List<Town> townsOfDepartment(String departmentCode,
       {String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
@@ -76,6 +118,8 @@ class LocationData {
     }
   }
 
+  /// Get a town by its name.
+  ///
   static List<District> districtsOfTown(String townCode,
       {String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
@@ -91,6 +135,8 @@ class LocationData {
     }
   }
 
+  /// Get a district by its name.
+  ///
   static List<Neighborhood> neighborhoodsOfDistrict(String districtCode,
       {String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
@@ -106,6 +152,8 @@ class LocationData {
     }
   }
 
+  /// Get a neighborhood by its name.
+  ///
   static List<LocationEntity> searchData(String query,
       {String sortBy = 'asc'}) {
     List<LocationEntity> result = [];
@@ -116,6 +164,8 @@ class LocationData {
     return result;
   }
 
+  /// Search departments by name.
+  ///
   static List<Department> searchDepartments(String query,
       {String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
@@ -133,6 +183,8 @@ class LocationData {
     }
   }
 
+  /// Search towns by name.
+  ///
   static List<Town> searchTowns(String query, {String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
       return towns
@@ -149,6 +201,8 @@ class LocationData {
     }
   }
 
+  /// Search districts by name.
+  ///
   static List<District> searchDistricts(String query, {String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
       return districts
@@ -165,6 +219,8 @@ class LocationData {
     }
   }
 
+  /// Search neighborhoods by name.
+  ///
   static List<Neighborhood> searchNeighborhoods(String query,
       {String sortBy = 'asc'}) {
     if (sortBy == 'asc') {
@@ -182,5 +238,3 @@ class LocationData {
     }
   }
 }
-
-
